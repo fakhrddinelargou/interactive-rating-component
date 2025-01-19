@@ -1,49 +1,55 @@
-.hidden{
+.hidden {
     display: none;
 }
 
-.card{
+.card {
     background-color: var(--neutral-color-dark-blue);
-    width: 32%;
-    height: auto;
     padding: 2.5rem;
     border-radius: 2rem;
-
-}
-.card1-content,.card2-content{
-width: 100%;
-height: auto;
+    width: auto;
+    max-width: 40rem;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* CARD-1 */
-.star{
-    /* background-color:var(); */
+.star {
+
     background-color: var(--flow-color);
-width: 5rem;
-height: 5rem;
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
-.card1-title,.card2-title{
-    font-size: 3.5rem;
-    padding-top: 3rem;
+
+.card1-title,
+.card2-title {
+    font-size: 3rem;
+    padding-top: 2.5rem;
     font-weight: 700;
+    width: auto;
+    width: 27rem;
 }
-.card1-paragraph{
+
+.card1-paragraph {
     color: var(--neutral-color-light-grey);
-    width: 100%;
+    width: 95%;
     padding: 1rem 0 2rem 0;
+
 }
-.numbers{
-   
+
+.numbers {
+
     display: flex;
     gap: 2.5rem;
- 
     height: 8rem;
+    width: 35rem;
+
 }
-.numbers div{
+
+.numbers div {
     width: 5rem;
     height: 5rem;
     font-weight: 700;
@@ -51,72 +57,96 @@ border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-border-radius: 50%;
-color: var(--neutral-color-light-grey);
-font-size: 1.5rem;
-cursor: pointer;
-transition: .2s;
+    border-radius: 50%;
+    color: var(--neutral-color-light-grey);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .2s;
 }
-.numbers div:hover{
+
+.numbers div:hover {
     background-color: var(--neutral-color-white);
-  color: var(--neutral-color-dark-blue);
+    color: var(--neutral-color-dark-blue);
 }
-.btn{
-width: 100%;
-padding: 1.2rem;
-border-radius: 2rem;
-border: none;
-background-color: var(--primary-color-orange);
-font-family: "Overpass", serif;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 2px;
-transition: .4s;
-cursor: pointer;
+
+.btn {
+    width: 35rem;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--primary-color-orange);
+    font-family: "Overpass", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: .4s;
+    cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--neutral-color-white);
 }
 
 /* CARD-2 */
-.card2-content{
+.card2-content {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
-.cart-img{
-padding:1.5rem 0 2rem 0;
+.cart-img {
+    padding: 1.5rem 0 2rem 0;
+
 }
-.selected{
+
+.selected {
     font-size: 1.5rem;
-background-color: var(--flow-color);
-padding: 1rem 1.5rem;
-border-radius: 2rem;
-color: var(--primary-color-orange);
+    background-color: var(--flow-color);
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    color: var(--primary-color-orange);
 }
-.card2-paragraph{
+
+.card2-paragraph {
     padding-top: 1rem;
-    width: 90%;
+    width: 80%;
+    font-size: 1.4rem;
     color: var(--neutral-color-light-grey);
 }
 
 
 @media screen and (max-width:450px) {
-    .card{
+    .card {
         width: 90%;
-  
+        max-width: 30rem;
     }
-    .card1-content{
-  
-        height: auto;
+
+    .numbers {
+        gap: 1.2rem;
+        width: 25rem;
+        height: 7rem;
     }
-    .numbers{
-        gap: 2rem;
-    }
-    .numbers div{
+
+    .numbers div {
         width: 4rem;
         height: 4rem;
+    }
+
+    .btn {
+        width: 25rem;
+    }
+
+    .card1-paragraph {
+        font-size: 1.2rem;
+        max-width: 25rem;
+    }
+
+    .card2-paragraph {
+        width: 100%;
+        font-size: 1.2rem;
+        max-width: 30rem;
+
     }
 }
