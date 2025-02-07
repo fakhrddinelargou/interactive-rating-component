@@ -1,52 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-[62.5%]">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/style/main.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <style></style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/style/main.css">
-  <title>Frontend Mentor | Interactive rating component</title>
-</head>
-
-<body>
-
-
-  <section class="card">
-    <section class="card1">
-      <section class="card1-content">
-        <div class="star">
+  <body
+    class="w-full h-screen text-[1.5rem] flex items-center justify-center bg-[var(--neutral-color-very-dark-blue)] text-[var(--neutral-color-white)]"
+  >
+    <section
+      class="p-[2.5rem] rounded-[2rem] max-w-[40rem] box-border bg-[var(--neutral-color-dark-blue)] max-sm:w-[90%]"
+    >
+      <section>
+        <div
+          class="bg-[var(--flow-color)] flex items-center justify-center w-[5rem] h-[5rem] rounded-full"
+        >
           <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
             <path
               d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
-              fill="#FC7614" />
+              fill="#FC7614"
+            />
           </svg>
         </div>
-        <h2 class="card1-title">How did we do?</h2>
-        <p class="card1-paragraph">Please let us know how we did with your support request. All feedback is appreciated
-          to help us improve our offering!
+        <h2 class="text-[3rem] pt-[2.5rem] font-bold w-auto">How did we do?</h2>
+        <p
+          class="text-[var(--neutral-color-light-grey)] w-[95%] pt-[1rem] pb-[2rem]"
+        >
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
         </p>
-        <div class="numbers">
-          <div class="number" onclick="highlight(1)">1</div>
-          <div class="number" onclick="highlight(2)">2</div>
-          <div class="number number--highligthed" onclick="highlight(3)">3</div>
-          <div class="number" onclick="highlight(4)">4</div>
-          <div class="number" onclick="highlight(5)">5</div>
+        <div
+          class="numbers flex gap-[2.5rem] h-[8rem] w-[35rem] max-sm:w-auto max-sm:gap-[1rem] max-sm:justify-between"
+        >
+          <div
+            class="number w-[5rem] h-[5rem] font-bold flex items-center justify-center rounded-full text-[1.5rem] cursor-pointer duration-200 bg-[var(--flow-color)] text-[var(--neutral-color-light-grey)] hover:bg-[var(--neutral-color-white)] hover:text-[var(--neutral-color-dark-blue)] w-[2rem] h-[2rem]"
+            onclick="highlight(1)"
+          >
+            1
+          </div>
+          <div
+            class="number w-[5rem] h-[5rem] font-bold flex items-center justify-center rounded-full text-[1.5rem] cursor-pointer duration-200 bg-[var(--flow-color)] text-[var(--neutral-color-light-grey)] hover:bg-[var(--neutral-color-white)] hover:text-[var(--neutral-color-dark-blue)] w-[2rem] h-[2rem]"
+            onclick="highlight(2)"
+          >
+            2
+          </div>
+          <div
+            class="number w-[5rem] h-[5rem] font-bold flex items-center justify-center rounded-full text-[1.5rem] cursor-pointer duration-200 bg-[var(--flow-color)] text-[var(--neutral-color-light-grey)] hover:bg-[var(--neutral-color-white)] hover:text-[var(--neutral-color-dark-blue)] w-[2rem] h-[2rem]"
+            onclick="highlight(3)"
+          >
+            3
+          </div>
+          <div
+            class="number w-[5rem] h-[5rem] font-bold flex items-center justify-center rounded-full text-[1.5rem] cursor-pointer duration-200 bg-[var(--flow-color)] text-[var(--neutral-color-light-grey)] hover:bg-[var(--neutral-color-white)] hover:text-[var(--neutral-color-dark-blue)] w-[2rem] h-[2rem]"
+            onclick="highlight(4)"
+          >
+            4
+          </div>
+          <div
+            class="number w-[5rem] h-[5rem] font-bold flex items-center justify-center rounded-full text-[1.5rem] cursor-pointer duration-200 bg-[var(--flow-color)] text-[var(--neutral-color-light-grey)] hover:bg-[var(--neutral-color-white)] hover:text-[var(--neutral-color-dark-blue)] w-[2rem] h-[2rem]"
+            onclick="highlight(5)"
+          >
+            5
+          </div>
         </div>
-        <button class="btn" onclick="sumbilBtn()">Submit</button>
+        <button
+          class="btn hover:bg-[var(--neutral-color-white)] hover:text-[var(--neutral-color-dark-blue)] bg-[var(--primary-color-orange)] w-full p-[1.2rem] rounded-[10rem] border-none font-bold tracking-[.2rem] duration-500"
+          onclick="sumbilBtn()"
+        >
+          Submit
+        </button>
       </section>
     </section>
 
-   
-  </section>
-
-<script src="/pages/main.js"></script>
-</body>
-
+    <script src="/pages/main.js"></script>
+  </body>
 </html>
