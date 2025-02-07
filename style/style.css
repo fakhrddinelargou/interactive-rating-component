@@ -2,8 +2,8 @@
     display: none;
 }
 .number--highligthed {
-    background-color: var(--primary-color-orange);
-    color: var(--neutral-color-dark-blue);
+    background-color: var(--primary-color-orange) !important;
+    color: var(--neutral-color-dark-blue) !important;
   } 
   .number--highligthed:hover {
     background-color: var(--primary-color-orange) !important;
